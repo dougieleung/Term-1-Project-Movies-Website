@@ -1,0 +1,227 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    max-width: 80%;
+    box-sizing: border-box;
+    /* image purchased from shutterstock.com */
+    background-image: url("../img/curtains.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+h1 {
+    padding: 20px;
+    margin: 0;
+    background: rgb(84,1,59);
+    max-width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    border: 20px rgb(77, 65, 36) ridge;
+
+}
+
+h2 {
+    padding: 20px 5px;
+    margin: 20px 0 0 0;
+    color: whitesmoke;
+    background: rgb(36, 35, 35);
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    padding: 20px 10px;
+    margin: 0;
+    background: wheat;
+    color:rgb(74, 42, 7);
+    font-size: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.searchBar {
+    text-align: right;
+    color:whitesmoke;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.searchBar label {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.shortBtn, .clickBuy {
+    color: whitesmoke;
+    background: rgb(84,1,59);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.genreBtn {
+    color: whitesmoke;
+    padding: 10px;
+    background: rgb(84,1,59);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.otherOptions label {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.dropdown {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.rounded {
+    padding: 8px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    flex-grow: 1;
+    background: rgb(36, 35, 35);
+    margin: 0 0 20px 0;
+    border: 15px dotted red;
+}
+
+td {
+    color: whitesmoke;
+    border: 1px whitesmoke solid;
+    background:rgb(36, 35, 35);
+    margin: 0;
+    font-size: larger;
+    padding: 5px;
+}
+
+th {
+    color: whitesmoke;
+    font-size: larger;
+    padding: 5px;
+}
+
+.attribution {
+    margin: 15px 0;
+    padding: 20px 5px;
+    background: rgb(84,1,59);
+    color: whitesmoke;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: whitesmoke;
+    background: none;
+}
+
+/* Addons */
+
+.tvShowOption {
+    color:whitesmoke;
+    font-size: 22px;
+    font-weight:bold;
+}
+
+
+.movieBlock {
+    margin-top: 40px;
+}
+
+.descriptionContainer {
+    margin-bottom: 20px;
+    background: rgb( 74, 42, 7);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    color: white;
+    font-size: x-large;
+}
+
+.textDescription {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.movieSign {
+    margin: 30px 0;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+/*********** Online Purchases container ***********/
+
+h4 {
+    color:whitesmoke;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.onlinePurchase {
+    padding: 20px;
+    /* image purchased from shutterstock.com */
+    background-image: url("../img/filmPopcorn.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.tableOptions {
+    width: 40%;
+}
+
+td {
+    text-align: left;
+}
+
+.billOutput {
+    background: rgb(36, 35, 35);
+    margin-top: 15px;
+    padding: 20px;
+    color:whitesmoke;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.imageAttribution {
+    margin-bottom: 15px;
+    color: lightslategray;
+}
+
+/* Enlarge photos code from https://success.appen.com/hc/en-us/articles/202703155-CSS-Guide-to-Enlarge-Images-on-Hover */
+
+.thumbnail {
+    height: 60px;
+    width: 60px;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:150px;
+    height:auto;
+    display:block;
+    z-index:999;
+}

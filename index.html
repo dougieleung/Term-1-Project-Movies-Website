@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Doug's 4820 & 4815 Term Project</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <h1>SnowCaps Entertainment</h1>
+
+        <div class="movieSign">
+
+            <!-- 4811 Course taught how to make gif.  Made it flash in photoshop.  Source of image: shutterstock.com -->
+
+            <img src="img/movie-signage.gif" alt="movie sign"><br>
+            
+            <!--source teaching how to add audio https://www.tutorialspoint.com/How-to-add-an-audio-player-to-an-HTML-webpage -->
+            <!-- source of mp3 file: https://mp3.gisher.org/songs/318/ -->
+
+            <audio controls>
+                <source src="media/Frank Sinatra - New York, New York.mp3" type="audio/mpeg">
+            </audio>
+        
+        </div>
+
+        <div class="searchBar">
+            <input type="radio" name="searchOptions" id="searchTitle" checked="checked">
+            <label for="searchMovies">Search by Movie Title</label>
+            <input type="radio" name="searchOptions" id="searchTV">
+            <label for="searchTVShows">Search by TV Show Title</label>
+            <input type="radio" name="searchOptions" id="searchName">
+            <label for="searchMovies">Search by Actor's Name</label>
+            <input id="searchItem" class="rounded">
+            <button id="findItem" class="shortBtn">Search</button>
+        </div>
+        <div class="otherOptions">
+            <input type="checkbox" id="popularTVShows">
+            <label class="tvShowOption" for="popularTVShows">Click to view Popular TV Shows</label>
+            <select class="dropdown" id="genreMovies">
+                <option value="28">Action</option>
+                <option value="35">Comedy</option>
+                <option value="18">Drama</option>
+                <option value="27">Horror</option>
+            </select>
+            <button class="genreBtn" id="pickGenre">Select Movie Genre</button>
+        </div>
+        <h2>Enjoy your favourite movies and tv shows at home!</h2>
+        <main>
+            <table id="movieTable">
+                <tr>
+                    <th>Current Movies</th>
+                    <th>Release Date</th>
+                    <th>Rating</th>
+                    <th>Select</th>
+                </tr>
+            </table>
+        </main>
+
+        <div id="movieDetails" class="detailContainer">
+        </div>
+
+    <!-- ************************************************************************** -->
+    <!-- **************** Purchase rentals and treats for the show **************** -->
+    <!-- ************************************************************************** -->
+
+    <!-- images taken and purchased from unsplash.com shutterstock.com -->
+
+            <div class="onlinePurchase">
+                <h4>It's Not a Movie Night Without Treats!</h4>
+                <table class="tableOptions">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img class="thumbnail" src="img/movie.jpg" alt="movie">
+                            </td>
+                            <td>How many movies would you like to rent?</td>
+                            <td>$2 per rental</td>
+                            <td>
+                                <input type="text" id="movieRent">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="thumbnail" src="img/television.png" alt="television">
+                            </td>
+                            <td>How many tv shows would you like to rent?</td>
+                            <td>$1 per rental</td>
+                            <td>
+                                <input type="text" id="tvRent">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="thumbnail" src="img/popcorn.png" alt="popcorn">
+                            </td>
+                            <td>Would you like popcorn?</td>
+                            <td>S/M/L $1/$2/$3</td>
+                            <td>
+                                <select id="popcorn">
+                                    <option value="0">none</option>
+                                    <option value="1">small</option>
+                                    <option value="2">medium</option>
+                                    <option value="3">large</option>
+                                </select><br>
+                                <select id="butter">
+                                    <option value="0">no butter</option>
+                                    <option value="1">butter</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="thumbnail" src="img/soda.jpg" alt="soda">
+                            </td>
+                            <td>Would you like soft drinks?</td>
+                            <td>S/M/L $1/$2/$3</td>
+                            <td>
+                                <select id="softdrink">
+                                    <option value="0">none</option>
+                                    <option value="1">small</option>
+                                    <option value="2">medium</option>
+                                    <option value="3">large</option>
+                                </select>
+                                <select id="typeDrink">
+                                    <option value="0">Coke</option>
+                                    <option value="1">Sprite</option>
+                                    <option value="2">Orange Crush</option>
+                                    <option value="3">Rootbeer</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="thumbnail" src="img/candies.jpg" alt="candies">
+                            </td>
+                            <td>Would you like a bag of candies?</td>
+                            <td>$2 per bag</td>
+                            <td>
+                                <select id="candies">
+                                    <option value="0">no</option>
+                                    <option value="2">yes</option>
+                                </select><br>
+                                <select id="typeCandies">
+                                    <option value="0">Skittles</option>
+                                    <option value="1">Milk Duds</option>
+                                    <option value="2">Twizzlers</option>
+                                    <option value="3">Sour Patch Kids</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="thumbnail" src="img/tshirt.png" alt="tshirt">
+                            </td>
+                            <td>Would you like a T-Shirt that says "Langara Rocks!"?</td>
+                            <td>Fantastic price of $10!</td>
+                            <td>
+                                <select id="tshirt">
+                                    <option value="0">no</option>
+                                    <option value="10">yes</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="imageAttribution">Image source: unsplash.com and shuttershock.com</p>
+                <p>
+                    <button class=clickBuy id="purchaseBtn">Place Order</button>
+                </p>
+                <p class="billOutput" id="outputArea"></p>
+            </div>
+        
+    <!-- ************************************************************************** -->
+    <!-- ************************************************************************** -->
+
+        <footer>
+            <p class="attribution">&copy;TMDb - Data Source: <a href="themoviedb.org">The Movie Db - For Academic, Non-Commercial Use</a></p>
+        </footer>
+        
+    </body>
+</html>
